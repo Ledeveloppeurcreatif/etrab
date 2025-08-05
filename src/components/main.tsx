@@ -16,7 +16,7 @@ function Main() {
         </div>
       </header>
 
-      <section className="section__container destination__container" id="about">
+      <section className="section__container destination__container" id="destinations">
         <h2 className="section__header">Destinations populaires</h2>
         <p className="section__description">
           Découvrez les villes desservies par ETRAB à travers le Togo
@@ -117,21 +117,22 @@ function Main() {
         </div>
       </section>
 
-      <section className="section__container showcase__container" id="package">
+       <section className="section__container showcase__container" id="about">
         <div className="showcase__image">
           <img src="img/etrab.jpg" alt="showcase" />
         </div>
         <div className="showcase__content">
-          <h4>Confort et sécurité à bord</h4>
+          <h4>À propos de nous !</h4>
           <p>
-            Nos bus sont climatisés, équipés de télévision, et offrent un espace
-            agréable pour les longs trajets. Voyagez dans les meilleures conditions.
+            ETRAB est une entreprise de transport interurbain basée au Togo, dédiée à offrir des trajets sûrs, confortables et accessibles à tous. Forte de plus de 10 ans d’expérience, notre équipe met un point d’honneur à la ponctualité et à la satisfaction de nos clients.
           </p>
           <p>
-            Que vous alliez à Kara, Sokodé ou Dapaong, ETRAB vous garantit un
-            service ponctuel et professionnel.
+            Nos bus modernes sont climatisés, équipés de télévision et disposent de sièges spacieux pour garantir un voyage agréable, que ce soit pour des trajets courts ou longs. Nous desservons les principales villes du pays, notamment Dapaong, Kara et Lomé, avec un service professionnel et attentionné.
           </p>
-          <div className="showcase__btn">
+          <p>
+            Choisir ETRAB, c’est opter pour la sécurité, la fiabilité et une expérience de voyage unique à travers le Togo.
+          </p>
+          <div className="header__btns">
             <button className="btn">
               Réserver maintenant
               <span><i className="ri-arrow-right-line"></i></span>
@@ -139,6 +140,7 @@ function Main() {
           </div>
         </div>
       </section>
+
 
       <section className="section__container banner__container">
         <div className="banner__card">

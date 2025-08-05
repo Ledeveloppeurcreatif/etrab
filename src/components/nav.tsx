@@ -15,7 +15,7 @@ function Nav() {
           <li><a href="#home">ACCUEIL</a></li>
           <li><a href="#about">À PROPOS</a></li>
           <li><a href="#destinations">DESTINATIONS</a></li>
-          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#tour">SERVICES</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a href="#booking">RÉSERVER</a></li>
         </ul>

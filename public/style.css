@@ -375,7 +375,7 @@ columns: var(--text-dark);
     color: var(--text-light);
   }
 
-  .showcase__content .btn{
+  /* .showcase__content .btn{
     width: 100%;
     margin-top: 2rem;
     padding: 1.5rem;
@@ -386,7 +386,7 @@ columns: var(--text-dark);
     background-position: center center;
     background-repeat: repeat;
     border-radius: 5px;
-  }
+  } */
 
   .banner__container{
     display: grid;
