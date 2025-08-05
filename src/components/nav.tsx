@@ -13,8 +13,8 @@ function Nav() {
 
         <ul className="nav__links" id="nav-links">
           <li><a href="#home">ACCUEIL</a></li>
-          <li><a href="#about">À PROPOS</a></li>
           <li><a href="#destinations">DESTINATIONS</a></li>
+          <li><a href="#about">À PROPOS</a></li>
           <li><a href="#tour">SERVICES</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a href="#booking">RÉSERVER</a></li>

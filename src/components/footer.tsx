@@ -28,10 +28,11 @@ function Footer() {
           <div className="footer__col">
             <h4>Liens rapides</h4>
             <ul className="footer__links">
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Nos bus</a></li>
-              <li><a href="#">Destinations</a></li>
-              <li><a href="#">Réservation</a></li>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#tour">Services</a></li>
+          <li><a href="#contact">Contacts</a></li>
             </ul>
           </div>
 
