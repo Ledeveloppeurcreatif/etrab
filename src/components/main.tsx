@@ -22,8 +22,21 @@ function Main() {
           Découvrez les villes desservies par ETRAB à travers le Togo
         </p>
         <div className="destination__grid">
+                    <div className="destination__card">
+            <img src="img/dapaong.jpg" alt="destination" />
+            <div className="destination__card__details">
+              <div>
+                <h4>Dapaong</h4>
+                <p>Long trajet confortable — environ 9 000 FCFA</p>
+              </div>
+              <div className="destination__ratings">
+                <span><i className="ri-star-fill"></i></span>
+                4.7
+              </div>
+            </div>
+          </div>
           <div className="destination__card">
-            <img src="img/card.jpg" alt="destination" />
+            <img src="img/kara.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
                 <h4>Kara</h4>
@@ -36,28 +49,15 @@ function Main() {
             </div>
           </div>
           <div className="destination__card">
-            <img src="img/card2.jpg" alt="destination" />
+            <img src="img/lome.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
-                <h4>Sokodé</h4>
+                <h4>Lomé</h4>
                 <p>Service fiable et ponctuel — bagages inclus</p>
               </div>
               <div className="destination__ratings">
                 <span><i className="ri-star-fill"></i></span>
                 4.5
-              </div>
-            </div>
-          </div>
-          <div className="destination__card">
-            <img src="img/card3.webp" alt="destination" />
-            <div className="destination__card__details">
-              <div>
-                <h4>Dapaong</h4>
-                <p>Long trajet confortable — environ 9 000 FCFA</p>
-              </div>
-              <div className="destination__ratings">
-                <span><i className="ri-star-fill"></i></span>
-                4.7
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ function Main() {
 
       <section className="section__container showcase__container" id="package">
         <div className="showcase__image">
-          <img src="img/showcase.webp" alt="showcase" />
+          <img src="img/etrab.jpg" alt="showcase" />
         </div>
         <div className="showcase__content">
           <h4>Confort et sécurité à bord</h4>
