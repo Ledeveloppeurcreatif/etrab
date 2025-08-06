@@ -5,7 +5,7 @@ function Main() {
         <div className="header__container">
           <div className="header__content">
             <p>TRANSPORT INTERURBAIN AU TOGO</p>
-            <h1>Apprenez plus avec le club des développeurs de ipnet institute of technology</h1>
+            <h1>Voyagez sereinement avec ETRAB</h1>
             <div className="header__btns">
               <button className="btn">Réserver un trajet</button>
             </div>
