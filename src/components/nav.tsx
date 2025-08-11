@@ -21,7 +21,13 @@ function Nav() {
         </ul>
 
         <div className="nav__btns">
-          <button className="btn">RÉSERVER</button>
+                <button
+        className="btn"
+        onClick={() => window.open("https://wa.me/22893104011", "_blank")}
+      >
+        Réserver un trajet
+      </button>
+
         </div>
       </nav>
     </>

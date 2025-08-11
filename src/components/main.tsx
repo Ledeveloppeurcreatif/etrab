@@ -7,7 +7,13 @@ function Main() {
             <p>TRANSPORT INTERURBAIN AU TOGO</p>
             <h1>Voyagez sereinement avec ETRAB</h1>
             <div className="header__btns">
-              <button className="btn">Réserver un trajet</button>
+            <button
+              className="btn"
+              onClick={() => window.open("https://wa.me/22893104011", "_blank")}
+            >
+              Réserver un trajet
+            </button>
+
             </div>
           </div>
           <div className="header__image">
@@ -17,7 +23,7 @@ function Main() {
       </header>
 
       <section className="section__container destination__container" id="destinations">
-        <h2 className="section__header">Destinations populaires</h2>
+        <h2 className="section__header">Nos destinations</h2>
         <p className="section__description">
           Découvrez les villes desservies par ETRAB à travers le Togo
         </p>
@@ -26,7 +32,7 @@ function Main() {
             <img src="img/dapaong.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
-                <h4>Dapaong</h4>
+                <h4>Lomé-Dapaong</h4>
                 <p>Long trajet confortable — environ 9 000 FCFA</p>
               </div>
               <div className="destination__ratings">
@@ -35,11 +41,11 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="destination__card">
+          <div className="destination__card" >
             <img src="img/kara.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
-                <h4>Kara</h4>
+                <h4>Lomé-Kara</h4>
                 <p>Départ quotidien à 7h — environ 6 000 FCFA</p>
               </div>
               <div className="destination__ratings">
@@ -49,7 +55,7 @@ function Main() {
             </div>
           </div>
           <div className="destination__card">
-            <img src="img/lome.jpg" alt="destination" />
+            <img src="img/kara.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
                 <h4>Lomé</h4>
@@ -133,7 +139,8 @@ function Main() {
             Choisir ETRAB, c’est opter pour la sécurité, la fiabilité et une expérience de voyage unique à travers le Togo.
           </p>
           <div className="header__btns">
-            <button className="btn">
+            <button className="btn"
+            onClick={() => window.open("https://wa.me/22893104010", "_blank")}>
               Réserver maintenant
               <span><i className="ri-arrow-right-line"></i></span>
             </button>
