@@ -1,4 +1,13 @@
+
+import React from 'react';
+import Modal from './reservation';
+
+
 function Nav() {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+    const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  
   return (
     <>
       <nav>
@@ -23,13 +32,15 @@ function Nav() {
         <div className="nav__btns">
                 <button
         className="btn"
-        onClick={() => window.open("https://wa.me/22893104011", "_blank")}
+        onClick={openModal}
       >
         Réserver un trajet
       </button>
 
         </div>
       </nav>
+        {/* Modal Component */}
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

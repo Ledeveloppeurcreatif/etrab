@@ -1,4 +1,12 @@
+import { useState } from 'react';
+import Modal from './reservation';
+
 function Main() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <header id="home">
@@ -7,13 +15,9 @@ function Main() {
             <p> ENTREPRISE DE TRANSPORT BELENGAI</p>
             <h1>Voyagez sereinement avec ETRAB</h1>
             <div className="header__btns">
-            <button
-              className="btn"
-              onClick={() => window.open("https://wa.me/22893104011", "_blank")}
-            >
-              Réserver un trajet
-            </button>
-
+              <button className="btn" onClick={openModal}>
+                Réserver un trajet
+              </button>
             </div>
           </div>
           <div className="header__image">
@@ -28,7 +32,7 @@ function Main() {
           Découvrez les villes desservies par ETRAB à travers le Togo
         </p>
         <div className="destination__grid">
-                    <div className="destination__card">
+          <div className="destination__card">
             <img src="img/dapaong.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
@@ -41,7 +45,7 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="destination__card" >
+          <div className="destination__card">
             <img src="img/kara.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
@@ -86,7 +90,7 @@ function Main() {
               <h4>Un clic suffit</h4>
               <p>
                 Réservez vos billets rapidement et suivez votre bus en temps réel.
-                Fini les files d’attente — voyagez en toute tranquillité.
+                Fini les files d'attente — voyagez en toute tranquillité.
               </p>
             </div>
           </div>
@@ -101,7 +105,7 @@ function Main() {
               <h4>Flexibilité garantie</h4>
               <p>
                 Choisissez vos horaires et vos destinations selon vos besoins.
-                ETRAB s’adapte à votre rythme.
+                ETRAB s'adapte à votre rythme.
               </p>
             </div>
           </div>
@@ -116,31 +120,30 @@ function Main() {
               <h4>Conseils pratiques</h4>
               <p>
                 Nos chauffeurs connaissent les routes du Togo comme leur poche.
-                Profitez d’un trajet sécurisé et bien organisé.
+                Profitez d'un trajet sécurisé et bien organisé.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-       <section className="section__container showcase__container" id="about">
+      <section className="section__container showcase__container" id="about">
         <div className="showcase__image">
           <img src="img/etrab.jpg" alt="showcase" />
         </div>
         <div className="showcase__content">
           <h4>À propos de nous !</h4>
           <p>
-            ETRAB est une entreprise de transport interurbain basée au Togo, dédiée à offrir des trajets sûrs, confortables et accessibles à tous. Forte de plus de 10 ans d’expérience, notre équipe met un point d’honneur à la ponctualité et à la satisfaction de nos clients.
+            ETRAB est une entreprise de transport interurbain basée au Togo, dédiée à offrir des trajets sûrs, confortables et accessibles à tous. Forte de plus de 10 ans d'expérience, notre équipe met un point d'honneur à la ponctualité et à la satisfaction de nos clients.
           </p>
           <p>
             Nos bus modernes sont climatisés, équipés de télévision et disposent de sièges spacieux pour garantir un voyage agréable, que ce soit pour des trajets courts ou longs. Nous desservons les principales villes du pays, notamment Dapaong, Kara et Lomé, avec un service professionnel et attentionné.
           </p>
           <p>
-            Choisir ETRAB, c’est opter pour la sécurité, la fiabilité et une expérience de voyage unique à travers le Togo.
+            Choisir ETRAB, c'est opter pour la sécurité, la fiabilité et une expérience de voyage unique à travers le Togo.
           </p>
           <div className="header__btns">
-            <button className="btn"
-            onClick={() => window.open("https://wa.me/22893104010", "_blank")}>
+            <button className="btn" onClick={openModal}>
               Réserver maintenant
               <span><i className="ri-arrow-right-line"></i></span>
             </button>
@@ -148,11 +151,10 @@ function Main() {
         </div>
       </section>
 
-
       <section className="section__container banner__container">
         <div className="banner__card">
           <h4>10+</h4>
-          <p>Années d’expérience</p>
+          <p>Années d'expérience</p>
         </div>
         <div className="banner__card">
           <h4>15k+</h4>
@@ -198,6 +200,9 @@ function Main() {
           </div>
         </div>
       </section>
+
+      {/* Modal Component */}
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }
