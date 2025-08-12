@@ -4,7 +4,7 @@ function Main() {
       <header id="home">
         <div className="header__container">
           <div className="header__content">
-            <p>TRANSPORT INTERURBAIN AU TOGO</p>
+            <p> ENTREPRISE DE TRANSPORT BELENGAI</p>
             <h1>Voyagez sereinement avec ETRAB</h1>
             <div className="header__btns">
             <button
@@ -32,8 +32,8 @@ function Main() {
             <img src="img/dapaong.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
-                <h4>Lomé-Dapaong</h4>
-                <p>Long trajet confortable — environ 9 000 FCFA</p>
+                <h4>Dapaong</h4>
+                <p>Long trajet confortable</p>
               </div>
               <div className="destination__ratings">
                 <span><i className="ri-star-fill"></i></span>
@@ -45,8 +45,8 @@ function Main() {
             <img src="img/kara.jpg" alt="destination" />
             <div className="destination__card__details">
               <div>
-                <h4>Lomé-Kara</h4>
-                <p>Départ quotidien à 7h — environ 6 000 FCFA</p>
+                <h4>Kara</h4>
+                <p>Départ quotidien à 7h</p>
               </div>
               <div className="destination__ratings">
                 <span><i className="ri-star-fill"></i></span>
@@ -159,7 +159,7 @@ function Main() {
           <p>Clients satisfaits</p>
         </div>
         <div className="banner__card">
-          <h4>4.8</h4>
+          <h4>4.8/5</h4>
           <p>Note moyenne</p>
         </div>
       </section>
